@@ -1,0 +1,22 @@
+@CHARSET "ISO-8859-1";
+
+.margeBouton {
+   height: 50px;
+   width: 100%;
+}
+
+.selectElm {
+  padding-left: 40px !important;
+}
+
+.titreEnteteElm {
+  background-color: #F7F7F7;
+}
+
+.lienEnteteElm {
+  margin: 0 50px;
+}
+
+.page {
+  background-color: #C7C7C7;
+}

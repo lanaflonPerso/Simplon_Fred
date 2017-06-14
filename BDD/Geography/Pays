@@ -1,0 +1,33 @@
+select * from CHILDREN inner join CONTACTS on CHILDREN.CONTACT_ID = CONTACTS.ID inner join HOBBIES on CHILDREN.CONTACT_ID = HOBBIES.ID;
+
+# ID, CONTACT_ID, FNAME, AGE, ID, FNAME, LNAME, EMAIL, CONTACT_TYPE, AGE, ID, CONTACT_ID, HOBBY
+'1', '5', 'Sam', '5', '5', 'Jane', 'Edwards', 'jedwards@icloud.com', 'contact', '40', '5', '3', 'Scuba'
+'2', '1', 'Ruby', '2', '1', 'Dave', 'Smith', 'dsmith@icloud.com', 'friend', '46', '1', '1', 'Horseback Riding'
+'3', '1', 'Robert', '4', '1', 'Dave', 'Smith', 'dsmith@icloud.com', 'friend', '46', '1', '1', 'Horseback Riding'
+'4', '1', 'Roman', '6', '1', 'Dave', 'Smith', 'dsmith@icloud.com', 'friend', '46', '1', '1', 'Horseback Riding'
+
+
+
+
+select * from CHILDREN inner join CONTACTS on CHILDREN.CONTACT_ID = CONTACTS.ID;
+
+# ID, CONTACT_ID, FNAME, AGE, ID, FNAME, LNAME, EMAIL, CONTACT_TYPE, AGE
+'1', '5', 'Sam', '5', '5', 'Jane', 'Edwards', 'jedwards@icloud.com', 'contact', '40'
+'2', '1', 'Ruby', '2', '1', 'Dave', 'Smith', 'dsmith@icloud.com', 'friend', '46'
+'3', '1', 'Robert', '4', '1', 'Dave', 'Smith', 'dsmith@icloud.com', 'friend', '46'
+'4', '1', 'Roman', '6', '1', 'Dave', 'Smith', 'dsmith@icloud.com', 'friend', '46'
+
+
+
+select * from HOBBIES;
+
+# ID, CONTACT_ID, HOBBY
+'1', '1', 'Horseback Riding'
+'2', '2', 'Sailing'
+'3', '1', 'Guitar'
+'4', '3', 'Skiing'
+'5', '3', 'Scuba'
+'6', '4', 'Photography'
+'7', '6', 'Travel'
+'8', '6', 'Guitar'
+

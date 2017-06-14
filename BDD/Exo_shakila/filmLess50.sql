@@ -1,0 +1,1 @@
+SELECT COUNT(*) AS filmCourt FROM film where length < 50

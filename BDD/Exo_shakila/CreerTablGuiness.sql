@@ -1,0 +1,5 @@
+CREATE table IF NOT EXISTS `GUINESS` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+    `film` VARCHAR(30) NULL,
+    PRIMARY KEY (`id`)
+);

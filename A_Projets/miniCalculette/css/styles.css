@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'lcd';
+  src: local('DS DIGIT'),
+       local('ds-digit'),
+       url(../fonts/DS-DIGIT.TTF);
+}
+
+body {
+  padding: 100px 0 0 100px;
+  background: #CCCCCC;
+}
+
+.egal {
+  width: 98px;
+}
+
+.casio {
+	background: grey;
+	padding: 20px;
+	width: 212px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+button {
+	height: 45px;
+	width: 45px;
+	font-size: 25px;
+  margin: 4px 2px 4px 2px;
+  border-radius: 5px;
+}
+
+.afficheur {
+	font-weight: bold;
+	font-size: 30px;
+	height: 30px;
+	width: 193px;
+	background: white;
+	text-align: right;
+	font-family: lcd, arial, serif;
+  margin: 10px 0 10px 5px;
+  padding-right: 10px;
+  border-radius: 3px;
+}
+
+.indice {
+  font-family: arial;
+  font-size: 16px;
+}

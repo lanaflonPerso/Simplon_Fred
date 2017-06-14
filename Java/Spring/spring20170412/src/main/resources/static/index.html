@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first API rest</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" type="text/css"	href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css"	href="https://cdn.datatables.net/v/dt/dt-1.10.13/datatables.min.css" />
+</head>
+<body>
+	<header id="header">
+		<div class="inner">
+			<a href="index.html" class="">
+			  <span class=""><img src="img/logo.png" height="40" width="40" alt="Logo Fred@Simplon.co" /></span>
+			  <span class="title">@Simplon</span>
+			</a>
+
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+		      <li class="disabled"><a data-scroll href="#"><span class="btn btn-default" id="nom"></span></a></li>
+		      <li class="disabled"><a data-scroll href="#"><span class="btn btn-default" id="prenom"></span></a></li>
+          <li class=""         id="perso">      <a data-scroll href="#"><span class="btn btn-default">Votre calendrier</span></a></li>
+          <li class=""         id="equipe">     <a data-scroll href="#"><span class="btn btn-default">Calendrier de votre équipe</span></a></li>
+
+          <li class="active"   id="left">       <a data-scroll href="#"><span class="btn btn-default glyphicon glyphicon-triangle-left" aria-hidden="true"></span></a></li>
+          <li class=""         id="today">      <a data-scroll href="#"><span class="btn btn-default">Aujourd'hui</span></a></li>
+          <li class=""         id="right">      <a data-scroll href="#"><span class="btn btn-default glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a></li>
+        </ul>
+      </div>
+    </div>
+	</header>
+
+  <section id="calendar" class="container-fluid" style="min-height: 500px">
+    <article class="col-sm-12" id="calendarList">
+      <table id="calendarTable" class="display border">
+         <tbody id="table">
+         </tbody>
+      </table>
+    </article>
+  </section>
+
+	<footer id="footer" class="container">
+		<p>
+			© <a href="http://www.simplon.co">simplon.co</a> 2017
+		</p>
+	</footer>
+	<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.13/datatables.min.js"></script>
+	<script type="text/javascript" src="js/calendrier.js"></script>
+</body>
+</html>

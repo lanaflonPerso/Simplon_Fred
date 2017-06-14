@@ -1,0 +1,1 @@
+DCInfosCallback({"country":"FR","region":"A3","city":"La Poste","latitude":47.5962,"longitude":2.7926,"postal_code":"45250","browser":"Mozilla Firefox","ip":"185.16.252.2","traffic":null})

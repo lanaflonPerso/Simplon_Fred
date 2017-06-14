@@ -1,0 +1,80 @@
+@CHARSET "ISO-8859-1";
+body
+{
+    background-image: url("../img/image1.jpg"); 
+ 	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.margeBouton {
+   height: 50px;
+   width: 100%;
+}
+
+.selectElm {
+  padding-left: 40px !important;
+}
+
+.titreEnteteElm {
+background-color: #F7F7F7;
+}
+
+.lienEnteteElm {
+  margin: 0 50px;
+}
+
+
+/* 
+.selpchd{
+color: #a9a9a9;
+ width: 205px;
+ height: 25px;
+}
+ */
+ 
+select option:first-child{color: blue; display: none;}
+select option{color: black;} /* bootstrap default color*/
+
+
+/* 
+background: linear-gradient(to bottom, yellow, magenta);
+height: inherit;
+overflow: hidden;
+background-image: url('');
+background-size: 100%;
+background-repeat: no-repeat;
+
+background-color: #ccc;
+background-image: -webkit-linear-gradient(bottom left, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0,           0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(0, 0, 0, 0)       75%, rgba(0, 0, 0, 0));
+background-image: -o-linear-gradient(bottom left, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0)   25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+ */
+
+
+.form-horizontal h3{
+	text-align:right !important;
+}
+
+/*
+.page {
+  background-color: #C7C7C7;
+}
+*/
+/*
+.fond {
+  margin:0;
+  padding:0;
+  background: url(img/image1.jpg) no-repeat center center fixed; 
+  background-size: cover; 
+}
+*/
+/* 
+.container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+*/

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Boucle dessinant un triangle</title>
+</head>
+<body>
+	<h1>Boucle réalisant un triangle</h1>
+	<p id="demo"></p>
+	<script>
+		function Ligne(nb, car) {
+			var mot = "";
+			for (j = 1; j <= nb; j++) {
+				mot += car;
+			}
+			return ("0000" + nb).substr(-4) + " - " + mot + "<br>";
+		}
+
+		function Triangle(x, lettre, ordre) {
+			var resultat = "";
+			if (ordre === 1) {
+				for (i = x; i > 0; i--) {
+					resultat += Ligne(i, lettre);
+				}
+			} else {
+				for (i = 1; i < x + 1; i++) {
+					resultat += Ligne(i, lettre);
+				}
+			}
+			return resultat;
+		}
+
+		var Nombre = parseInt(prompt("Entrer un nombre entier :"));
+		var Caractere = prompt("Entrer le caractère :");
+		var Sens = parseInt(prompt("Entrer le sens (1 pour décroissant) :"));
+
+		var MotSens = " croissant";
+		if (Sens === 1) {
+			MotSens = " décroissant";
+		}
+
+		document.getElementById("demo").innerHTML = "Vous avez choisi un triangle" + MotSens + " de " + Nombre + " lignes contenant des \"" + Caractere + "\"<br><br>" + Triangle(Nombre, Caractere, Sens);
+
+	</script>
+</body>
+</html>

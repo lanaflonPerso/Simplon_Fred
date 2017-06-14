@@ -1,0 +1,22 @@
+{
+  "absences" :[
+    {
+      "name" : "Congés payés",
+    },
+    {
+      "name" : "RTT",
+    },
+    {
+      "name" : "Repos",
+    },
+    {
+      "name" : "Absence",
+    },
+    {
+      "name" : "Autre",
+    },
+    {
+      "name" : " ",
+    }
+  ]
+}

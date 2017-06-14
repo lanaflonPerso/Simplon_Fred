@@ -1,0 +1,151 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: helvetica, "Open Sans", sans-serif;
+  background: linear-gradient(rgba(255,255,255,1),rgba(200,200,255,1));
+}
+
+header {
+  display:flex;
+  flex-direction:row;
+  justify:content;
+}
+
+footer {
+  line-: 16px;
+}
+
+input,.petit {
+  margin: 2px 5px 2px 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.identif {
+  display:flex;
+  flex-direction:row;
+  justify:content;
+}
+
+.entete {
+  background-color: #3b5998; /* #112277; /*#3b5998*/
+  display: flex;
+  justify-content: space-around;
+}
+
+.double {
+    display: flex;
+    justify-content: row;
+    }
+
+.titre {
+  font-family:helvetica;
+  font-size:36px;
+  font-weight:bolder;
+  color:white;
+}
+
+.droite{
+  margin-top:25px;
+}
+
+.champs {
+  height: 45px;
+  font-size: 18px;
+  padding: 8px 10px;
+  border-color: #bdc7d8;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.petit {
+  color:white;
+  font-size:12px;
+}
+
+#sombre {
+  color: #9cb4d8;
+}
+
+.corp {
+  display: flex;
+  flex-direction:row;
+  justify:content;
+}
+
+.titre1 {
+  font-size:36px;
+  font-family:helvetica;
+  font-weight:bold;
+}
+
+.text1 {
+  font-size:19px;
+  font-family:helvetica;
+}
+
+.detail {
+  font-size:11px;
+  font-family:helvetica;
+}
+
+.detail2 {
+  font-size:13px;
+  font-family:helvetica;
+  font-weight: bold;
+  color: #365899;
+}
+
+.connexion {
+  background-color: #4267b2;
+  color:white;
+  font-size:14px;
+  border-color:grey;
+  border: 1px;
+  font-weight:bold;
+  margin: 20px 20px 20px 20px;
+  padding: 4px 10px 4px 10px;
+  border-width: thin;
+  /*margin-top: 20px;
+  margin-bottom:20px;*/
+}
+
+.zone {
+  width: 160px;
+  line-height: 1.5;
+}
+
+.zone1 {
+  margin-bottom:30px;
+  width: 300px;
+  line-height: 1.5;
+  color: #777;
+}
+
+.zone2 {
+  margin-top:45px;
+  color: #666;
+}
+
+#lien:link {
+  color: #365899;
+}
+
+#connexion:link {
+  color: white;
+  background-color: #4267b2;
+}
+
+#inscription {
+  background: linear-gradient(#67ae55, #578843);
+  box-shadow: inset 0 1px 1px #a4e388;
+  padding: 12px 50px 12px 50px;
+  border-radius: 6px;
+}
+
+#inscription:link {
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+}

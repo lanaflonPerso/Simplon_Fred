@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Mastermind, le jeu !">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fred@Simplon</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./javascript/script.js"></script>
+  <script src="./javascript/anneesBissextiles.js"></script>
+  <script src="./javascript/boucleTriangle.js"></script>
+  <script src="./javascript/fibonacci.js"></script>
+  <script src="./javascript/fizzBuzz.js"></script>
+  <script src="./javascript/gestNotesEleve.js"></script>
+  <script src="./javascript/nombresPremiers.js"></script>
+  <link rel="icon" href="">
+</head>
+<body style="background-color: #abc;">
+  <div class="container">
+
+    <div>
+      <h1 style="font-weight:bold;text-align:center;">Développements - Promo1 - La Poste - FredC@Simplon</h1>
+    </div>
+
+    <div class="tabbable" style="font-weight:bold;"> <!-- Only required for left/right tabs -->
+      <div class="row" style="background-color:#ddd;">
+        <div class="col-lg-2"><ul class="nav nav-tabs"><li class="disabled"><a href="#">COURS</a></li></ul></div>
+        <div class="col-lg-10">
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation"><a href="#tab0" aria-controls="tab0" role="tab" data-toggle="tab">Scratch</a></li>
+            <li role="presentation"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">HTML/CSS</a></li>
+            <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Bootstrap</a></li>
+            <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Javascript</a></li>
+            <li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">jQuery</a></li>
+            <li role="presentation"><a href="#tab5" aria-controls="tab5" role="tab" data-toggle="tab">Java</a></li>
+            <li role="presentation"><a href="#tabE" aria-controls="tabE" role="tab" data-toggle="tab">Projets</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="tab-content navbar-inverse"> -->
+      <div class="row" style="background-color:#ccc;">
+        <div class="col-lg-2"><ul class="nav nav-tabs"><li class="disabled"><a href="#">REALISATIONS</a></li></ul></div>
+        <div class="col-lg-10">
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane" id="tab0">
+              <ul class="nav nav-tabs">
+                <li><a href="https://scratch.mit.edu/projects/132554714/">Chat_Maze</a></li>
+                <li><a href="https://scratch.mit.edu/projects/132704725/">Tirage au sort</a></li>
+                <li><a href="https://scratch.mit.edu/projects/133016660/">Lutins clonés</a></li>
+                <li><a href="https://scratch.mit.edu/projects/133209704/">Scroll 3 scènes</a></li>
+                <li><a href="https://scratch.mit.edu/projects/132894127/">Space Naval (Binôme avec Aurélie)</a></li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab1">
+              <ul class="nav nav-tabs">
+                <li><a href="./A_defis\FaceBook\Facebook.html">Facebook</a></li>
+                <li><a href="./A_defis\CSS - Donut Whole\index.html">Donuts</a></li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab2">
+              <ul class="nav nav-tabs">
+                <li><a href="./A_defis\BugBootStrap\index.html">BugBootstrap</a></li>
+                <li><a href="./A_defis\FaceBootStrap\index.html">FaceBootStrap</a></li>
+                <li><a href="./A_defis\ChallengeInterpromo_correction\index.html">Interpromo</a></li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab3">
+              <ul class="nav nav-tabs">
+                <li><a onclick="construireTriangle()" href="#">Triangle</a></li>
+                <li><a onclick="bouclerFizzBuzz()" href="#">FizzBuzz</a></li>
+                <li><a onclick="gererNotesEleve()" href="#">Notes d'un élève</a></li>
+                <li><a onclick="bouclerAnneeBissextile()" href="#">Années bissextiles</a></li>
+                <li><a onclick="calculerSuite()" href="#">Suite de Fibonacci</a></li>
+                <li><a onclick="trouverListeNbPremiers()" href="#">Nombres premiers</a></li>
+                <li><a href="./A_defis/Jasmin/Javascript-Recall/SpecRunner.html">Jasmin</a></li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab4">
+              <ul class="nav nav-tabs">
+                <li><a href="./jquery\pomodoro\index.html">Pomodoro</a></li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab5">
+              <ul class="nav nav-tabs">
+                <li><a href="#">En construction</a></li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tabE">
+              <ul class="nav nav-tabs">
+                <li><a href="./A_Projets\miniCalculette\index.html">Mini-Calculette</a></li>
+                <li><a href="./A_Projets\mastermind\index.html">Mastermind</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div class="col-lg-1"></div> -->
+    <!-- <div class="col-lg-10"> -->
+    <!-- <iframe src="http://www.w3schools.com">sghjkgh</iframe> -->
+    <div>
+      <h1 id="titre"></h1>
+      <div id="console"></div>
+    </div>
+    <!-- <div class="col-lg-1"></div> -->
+  </div>
+</body>
+</html>

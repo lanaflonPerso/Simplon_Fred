@@ -1,0 +1,57 @@
+<div class="container text-center">
+    <h3>{{message}} pour aujourd'hui
+        <span class="small" *ngIf="nbPomodoros>0">
+            temps estimé : {{nbPomodoros|pomodoroFormattedTime}}
+        </span>
+    </h3>
+    <p>
+        <span *ngFor="let selectedTask of tasks| pomodoroSelectedOnly : true ">
+           <pomodoro-icon  
+                [task]= "selectedTask" 
+                [taskTooltip]="tooltip">
+           </pomodoro-icon>
+        </span>
+    </p>
+    <p #tooltip [hidden]="nbPomodoros === 0">Passer la souris sur les tomates pour les détails</p>
+    <h3>Backlog des Tâches</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nom de la Tâche</th>
+          <th>A Réaliser avant le</th>
+          <th>Tomates</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let task of tasks; let i = index">
+           <td scope="row">
+              {{i}}<br />
+              <span *ngIf="task.isSelected" class="label label-info">
+              Dans le pipe
+              </span>
+           </td>
+           <td>{{task.name}}</td>
+           <td>{{task.deadline | date:'fullDate'}}</td>
+           <td>{{task.pomodorosQty}}</td>
+           <td>
+            <button class="btn btn-default"
+                        type="button"
+                        (click)="OnClick(task)" 
+                        [ngSwitch]="task.isSelected">
+                <template ngSwitchCase="0">
+                    <i class= "glyphicon glyphicon-plus-sign ">Ajouter</i>
+                </template>
+                <template ngSwitchCase="1">
+                    <i class= "glyphicon glyphicon-minus-sign">Retirer</i>
+                </template>
+                <template ngSwitchDefault>
+                    <i class= "glyphicon glyphicon-plus-sign ">Ajouter</i>
+                </template>           
+            </button>
+           </td>
+          </tr>
+      </tbody>
+    </table>
+  

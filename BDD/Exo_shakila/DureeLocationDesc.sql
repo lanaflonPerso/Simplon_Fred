@@ -1,0 +1,1 @@
+SELECT * From film ORDER BY rental_duration DESC

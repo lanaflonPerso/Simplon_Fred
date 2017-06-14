@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Zen.io</title>
+</head>
+<body>
+  <div id="infobulle">
+    <img src="gallery/bulle-msg.png" alt="">
+  </div>
+  <header class="heading">
+    <div class="layer">
+      <nav class="sub-menu">
+        <img class="logo" src="gallery/logo.png" alt="">
+        <ul id="menu-desktop">
+          <a href="#"><li>le palais</li></a>
+          <a href="#"><li>#zen'yze toi</li></a>
+          <a href="#"><li>contact</li></a>
+        </ul>
+        <ul id="menu-mobile">
+          <a href="#"><li><img src="gallery/menu-mobile.png" alt=""></li></a>
+        </ul>
+      </nav>
+      <h2>ZEN.</h2>
+    </div>
+  </header>
+  <main class="container">
+    <!-- on utilise ici un systeme de grid.css, il consiste à séparer l'écran en 12 colonnes
+    Pourquoi 12 : 4x3, 3x4, 6x2, 2x6
+    Il permet un large choix de division d'écran.
+    Donc la colonne 1 fera: 8,33% (100%12)
+    la colonne 2 fera 16,66%
+
+    Donc maintenant vous allez comprendre l'utlisation de ces grid,
+    on voit que sur la maquette chaque article prend la moitié de l'élement .container
+
+    Il faut donc prendre la grid 6 (50%), ici je l'ai appelé col-m-* pour les écran médiums,
+    j'ai aussi préparé des media query (responsive design) ou col-s-* est utilisable pour les écrans mobile
+
+    Sur la maquette en medium l'article prend la moitié et en mobile la totalité, il faut donc déclare 2 classes
+    dans votre élement .col-m-6 et .col-s-12
+
+    Par défault le navigateur va prendre le CSS des mediaquery et écraser l'autre -->
+    <article class="col-m-6 col-s-12"> <!-- déclaration de mes class grid -->
+      <div class="boxe"> <!-- ici j'imbrique une autre div dans mes colonne,
+        Pourquoi? si je ne fais pas ça, mes colonne (donc mes articles) seront collés.
+
+        Des margins pour les pousser? NON. Si je m'amuse à faire ça, le pourcentage de l'écran (100%) ne sera plus respecté!!
+        margin: 10px; + width: 8,33%, fera un: width:8,33%,20px; ! (essayer de comprendre) -->
+        <h4>#titre de l'actu</h4>
+        <p>
+          Verum ad istam omnem orationem brevis est defensio. Nam quoad aetas M. Caeli dare potuit isti suspicioni locum, fuit primum ipsius pudore, deinde etiam patris diligentia disciplinaque munita. Qui ut huic virilem togam deditšnihil dicam hoc loco de me; tantum sit, quantum vos existimatis; hoc dicam
+        </p>
+        <div class="content-btn">
+          <a href="#"><button name="button" class="btn">voir plus</button></a>
+        </div>
+      </div>
+    </article>
+    <article class="col-m-6 col-s-12">
+      <div class="boxe">
+        <h4>#titre de l'actu</h4>
+        <p>
+          Verum ad istam omnem orationem brevis est defensio. Nam quoad aetas M. Caeli dare potuit isti suspicioni locum, fuit primum ipsius pudore, deinde etiam patris diligentia disciplinaque munita. Qui ut huic virilem togam deditšnihil dicam hoc loco de me; tantum sit, quantum vos existimatis; hoc dicam
+        </p>
+        <div class="content-btn">
+          <a href="#"><button name="button" class="btn">voir plus</button></a>
+        </div>
+      </div>
+    </article>
+    <article class="col-m-6 col-s-12">
+      <div class="boxe">
+        <h4>#titre de l'actu</h4>
+        <p>
+          Verum ad istam omnem orationem brevis est defensio. Nam quoad aetas M. Caeli dare potuit isti suspicioni locum, fuit primum ipsius pudore, deinde etiam patris diligentia disciplinaque munita. Qui ut huic virilem togam deditšnihil dicam hoc loco de me; tantum sit, quantum vos existimatis; hoc dicam
+        </p>
+        <div class="content-btn">
+          <a href="#"><button name="button" class="btn">voir plus</button></a>
+        </div>
+      </div>
+    </article>
+    <article class="col-m-6 col-s-12">
+      <div class="boxe">
+        <h4>#titre de l'actu</h4>
+        <p>
+          Verum ad istam omnem orationem brevis est defensio. Nam quoad aetas M. Caeli dare potuit isti suspicioni locum, fuit primum ipsius pudore, deinde etiam patris diligentia disciplinaque munita. Qui ut huic virilem togam deditšnihil dicam hoc loco de me; tantum sit, quantum vos existimatis; hoc dicam
+        </p>
+        <div class="content-btn">
+          <a href="#"><button name="button" class="btn">voir plus</button></a>
+        </div>
+      </div>
+    </article>
+    <article class="col-m-6 col-s-12">
+      <div class="boxe">
+        <h4>#titre de l'actu</h4>
+        <p>
+          Verum ad istam omnem orationem brevis est defensio. Nam quoad aetas M. Caeli dare potuit isti suspicioni locum, fuit primum ipsius pudore, deinde etiam patris diligentia disciplinaque munita. Qui ut huic virilem togam deditšnihil dicam hoc loco de me; tantum sit, quantum vos existimatis; hoc dicam
+        </p>
+        <div class="content-btn">
+          <a href="#"><button name="button" class="btn">voir plus</button></a>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>

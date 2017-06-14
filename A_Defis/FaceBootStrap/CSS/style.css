@@ -1,0 +1,26 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: helvetica, "Open Sans", sans-serif;
+  background: linear-gradient(rgba(255,255,255,1),rgba(200,200,255,1));
+}
+
+header {
+  background-color: #3b5998; /* #112277; /*#3b5998*/
+}
+
+footer {
+  line-: 16px;
+}
+
+input {
+  margin: 2px 5px 2px 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.face {
+  font-size: 20px;
+  background-color: #3b5998; /* #112277; /*#3b5998*/
+}

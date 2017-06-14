@@ -1,0 +1,126 @@
+body{
+  margin: 0;
+  font-family: 'Helvetica', sans-serif;
+  background-color: rgb(238, 237, 242);
+}
+a{
+  text-decoration: none;
+}
+header.heading{
+  width: 100%;
+  background-image: url(../gallery/header.png);
+  background-size: cover; /* régler la taille de l'image, ne fonctionne que sur les background-img*/
+  background-position: bottom; /* régler la position de l'image*/
+}
+
+header.heading .layer{
+  width: 100%;
+  height: 90vh; /* vh est une dimension équivalente à %. Attention, 100% prend 100% d'un élement, 100vh prendra toujours 100% de votre page, on utilise ça car height:100%, ne fonctionne qu'avec une position*/
+  background: rgba(168, 73, 163, 0.72); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(168, 73, 163, 0.55) 0%, rgba(103, 150, 210, 0.23)  100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(168, 73, 163, 0.55) 0%, rgba(103, 150, 210, 0.23)  100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(168, 73, 163, 0.5) 0%, rgba(103, 150, 210, 0.23)  100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a849a3', endColorstr='#6796d3',GradientType=0 ); /* IE6-9 */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* la je dis à tous les élements à l'intérieur de .layer de ce centrer verticalement et horizontalement. Mon menu aussi se retrouvera donc centré, c'est pour cela
+  que j'ai mis une position: absolute; . Je m'explique: la position absolute permet de rendre indépendant un élement, du coups le flex ne pourra pas agir dessus.*/
+}
+
+header.heading .sub-menu{
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 25px;
+  display: flex; /* ici j'annonce flex */
+  align-items: center; /* ici je centre verticalement */
+  justify-content: space-between; /* et là, je dis que chaque élement doit etre opposé (chaque élement enfant)*/
+}
+header.heading .sub-menu img.logo{
+  width: 40px; /* en CSS ne donner qu'une dimension à une image, permet à l'autre de s'adapter automatiquement*/
+}
+header.heading .sub-menu ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+header.heading .sub-menu ul li{
+  margin: 0 10px; /* ici je donne de la margin que sur les côtés, pour espacer mes élements */
+  color: white;
+}
+header.heading .layer h2{
+  margin: 0;
+  color: rgba(255, 255, 255, 0.67);
+  text-transform: uppercase; /* met tous les caractères en majuscule */
+  font-size: 155px;
+}
+header.heading .layer #menu-mobile{
+  display: none; /* je cache mon menu mobile */
+}
+
+/*class général */
+.container{
+  width: 85%;
+  margin: auto;
+  padding: 10px 0;
+}
+.btn{
+  padding: 10px 25px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 100px;
+  color: rgb(181, 53, 172);
+  font-size: 12px;
+  border: 2px solid rgb(181, 53, 172);
+}
+.btn:hover{
+  background-color: rgb(181, 53, 172);
+  color: white;
+}
+/**/
+.boxe{
+  background-color: white;
+  padding: 10px;
+}
+.boxe h4{
+  margin: 0;
+  text-align: left;
+  font-size: 18px;
+}
+.boxe .content-btn{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#infobulle{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(181, 53, 172);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+#infobulle img{
+  width: 30px;
+}
+
+@media screen and (max-width: 800px){
+  #menu-desktop{
+    display: none; /* ici j'indique que en dessous 800px, je fais disparaitre mon menu bureau*/
+  }
+  #menu-mobile{
+    display: flex !important; /* et je fais apparaitre mon menu mobile */
+  }
+  #menu-mobile img{
+    width: 30px;
+  }
+
+}

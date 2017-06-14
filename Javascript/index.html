@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Mastermind, le jeu !">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fred@Simplon</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script src="anneesBissextiles.js"></script>
+  <script src="boucleTriangle.js"></script>
+  <script src="fibonacci.js"></script>
+  <script src="fizzBuzz.js"></script>
+  <script src="gestNotesEleve.js"></script>
+  <script src="nombresPremiers.js"></script>
+  <!-- <script src="traitementTableau.js"></script> -->
+  <!-- <script src="nombreATrouver.js"></script> -->
+  <link rel="icon" href="">
+</head>
+<body>
+  <ul class="nav nav-tabs">
+    <li>
+      <a href="#">Javascript</a>
+      <ul class="nav nav-tabs">
+        <li><a onclick="construireTriangle()" href="#">Triangle</a></li>
+        <li><a onclick="bouclerFizzBuzz()" href="#">FizzBuzz</a></li>
+        <li><a onclick="gererNotesEleve()" href="#">Notes d'un élève</a></li>
+        <li><a onclick="bouclerAnneeBissextile()" href="#">Années bissextiles</a></li>
+        <li><a onclick="calculerSuite()" href="#">Suite de Fibonacci</a></li>
+        <li><a onclick="trouverListeNbPremiers()" href="#">Nombres premiers</a></li>
+      </ul>
+    </li>
+  </ul>
+  <div class="col-lg-1"></div>
+  <div class="col-lg-10">
+    <h1 id="titre"></h1>
+    <div id="console"></div>
+  </div>
+  <div class="col-lg-1"></div>
+</body>
+</html>

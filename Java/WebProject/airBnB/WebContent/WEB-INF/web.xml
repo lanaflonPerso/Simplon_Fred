@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 	xmlns="http://java.sun.com/xml/ns/javaee"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+			version="3.0">
+
+  <jsp-config>
+	<jsp-property-group>
+	  <url-pattern>*.jsp</url-pattern>
+	    <scripting-invalid>true</scripting-invalid>
+	  </jsp-property-group>
+  </jsp-config>
+
+  <servlet>
+    <servlet-name>srvLogement</servlet-name>
+    <servlet-class>co.simplon.laposte.Slogement</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>srvProprio</servlet-name>
+    <servlet-class>co.simplon.laposte.Sproprio</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>srvPlanning</servlet-name>
+    <servlet-class>co.simplon.laposte.Sresa</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>srvRecherche</servlet-name>
+    <servlet-class>co.simplon.laposte.Srecherche</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>srvSelect</servlet-name>
+    <servlet-class>co.simplon.laposte.Sselect</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>srvLogement</servlet-name>
+    <url-pattern>/logement</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>srvProprio</servlet-name>
+    <url-pattern>/proprio</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>srvPlanning</servlet-name>
+    <url-pattern>/planning</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>srvRecherche</servlet-name>
+    <url-pattern>/cherche</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>srvSelect</servlet-name>
+    <url-pattern>/select</url-pattern>
+  </servlet-mapping>
+
+</web-app>

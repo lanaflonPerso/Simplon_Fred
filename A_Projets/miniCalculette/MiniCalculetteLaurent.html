@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mini calculette</title>
+        <style>
+          body {
+            padding: 70px;
+          }
+          input {
+              height: 50px;
+              width: 50px;
+              font-size: 20px;
+          }
+          #afficher {
+             width: 220px;
+             text-align: right;
+          }
+
+      </style>
+</head>
+<body onLoad="initialisation()">
+  <div>
+    <form name='calculatrice'>
+      <table>
+        <tr>
+            <td colspan="4">
+                <input type="text" readonly="readonly" name="afficher" id="afficher">
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="7" onClick="saisie(7);"> </td>
+            <td> <input type="button" value="8" onClick="saisie(8);"> </td>
+            <td> <input type="button" value="9" onClick="saisie(9);"> </td>
+            <td> <input type="button" value=":" onClick="operation(':');"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="4" onClick="saisie(4);"> </td>
+            <td> <input type="button" value="5" onClick="saisie(5);"> </td>
+            <td> <input type="button" value="6" onClick="saisie(6);"> </td>
+            <td> <input type="button" value="*" onClick="operation('*');"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="1" onClick="saisie(1);">  </td>
+            <td> <input type="button" value="2" onClick="saisie(2);">  </td>
+            <td> <input type="button" value="3" onClick="saisie(3);">  </td>
+            <td> <input type="button" value="-" onClick="operation('-');"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="CE" onClick="initialisation();"> </td>
+            <td> <input type="button" value="0" onClick="saisie(0);"> </td>
+            <td> <input type="button" value="=" onClick="operation('=');"> </td>
+            <td> <input type="button" value="+" onClick="operation('+');"> </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
+  <script>
+    var x;
+    var operateur;
+
+    function afficher() {
+      return document.calculatrice.afficher; // récupère le texte contenant la valeur de "afficher""
+    }
+
+    function saisie (touche){
+        afficher().value += touche;  // ajoute caractère en fin de chaine
+      }
+
+    function operation (touche) {
+      switch (touche) {
+        case "+":
+        case "-":
+        case "*":
+        case ":":
+            operateur = touche;    //met en mémoire l'operation'
+            x = parseFloat(afficher().value);  //met en mémoire la saisie
+            afficher().value = "";  // effacer l'affichage
+            break;
+        case "=":
+            resultat();
+            break;
+      }
+    }
+
+    function resultat() {
+        if (x == null) {
+            erreur("x inconnu") ;
+        return ;
+        }
+        if (afficher().value == "") {
+            erreur("Second opérande inconnu");
+            return ;
+        }
+        var y = parseFloat(afficher().value);
+        var solution = 0;
+        switch (operateur) {
+          case "+":
+              solution = x + y;
+              break;
+          case "-":
+              solution = x - y;
+              break;
+          case "*":
+              solution = x * y;
+              break;
+          case ":":
+              solution = x / y;
+              break;
+          default:
+              erreur("pas d'opération à faire'");
+              return;
+        }
+        afficher().value = solution;
+        x = 0;
+        y = 0;
+    }
+
+    function initialisation() {
+      x = 0;
+      y = 0;
+      afficher().value = null;
+    }
+
+    function erreur(msg) {
+      window.alert(msg);
+    }
+  </script>
+</body>
+</html>

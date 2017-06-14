@@ -1,0 +1,72 @@
+table, tr, th, td {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 11px;
+  background-color: #fff;
+}
+
+.border {
+	border: 2px solid black;
+ }
+
+.borderB {
+  border-style: solid;
+  border-color: black;
+  border-bottom-width: 2px;
+}
+
+.borderL {
+  border-style: solid;
+  border-color: black;
+  border-left-width: 2px;
+}
+
+.borderR {
+  border-style: solid;
+  border-color: black;
+  border-right-width: 2px;
+}
+
+.mois {
+  font-size: 14px;
+}
+
+td {
+	width: 1%;
+}
+
+.policeNormale{
+  font-color: black;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.policeEstompee{
+  color: #eee;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.policeClaire{
+  color: #fff;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.normal        {background-color: #fff;}
+.jaune         {background-color: #ffa;}
+.rouge         {background-color: #944;}
+.rougeEstompe  {background-color: #faa;}
+.bleu          {background-color: #449;}
+.bleuEstompe   {background-color: #aaf;}
+.vert          {background-color: #494;}
+.vertEstompe   {background-color: #afa;}
+.mauve         {background-color: #949;}
+.mauveEstompe  {background-color: #faf;}
+.gris          {background-color: #ddd;}
+
+.bleuUser {
+	background-color: #b2c5ff;
+	width: 12%;
+	font-size: 12px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="js/monfichier.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Mon titre</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">mon lien1</a>
+                </li>
+                <li>
+                    <a href="#">mon lien2</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <p>Un paragraphe</p>
+                <img src="Images/avatar.jpg" alt="mon image">
+            </article>
+            <aside>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>nom colonne</th>
+                            <th>nom colonne</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td>total 1</td>
+                            <td>total 2</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>celulle 1</td>
+                            <td>celulle 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+        </section>
+        <div>
+            <form>
+                <legend> Si vous voulez me laisser un message </legend>
+                <h4>Comment m'avez-vous trouvé?</h4>
+                <fieldset>
+                    <label for="texte">mon texte</label>
+                    <input type="text" name="texte" id="texte" placeholder="Tapez votre texte ici">
+                    <label for="ami">
+              <input type="radio" name="origine" value="ami" id="ami" checked="checked">
+              Par un ami
+              </label>
+                    <label for="web">
+              <input type="radio" name="origine" value="web" id="web">
+              Sur le web
+              </label>
+                    <label for="hasard">
+              <input type="radio" name="origine" value="hasard" id="hasard">
+              Par hasard
+              </label>
+                    <label for="autre">
+              <input type="radio" name="origine" value="autre" id="autre">
+              Autre ...
+              </label>
+                </fieldset>
+                <fieldset>
+                    <label for="textarea"> Votre message : </label><br>
+                    <textarea id="textarea" rows="4">
+              </textarea >
+              <p> Vous pouvez agrandir la fenêtre </p >
+              <button type="submit"> Envoyer </button >
+            </fieldset >
+          </form >
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+</html>

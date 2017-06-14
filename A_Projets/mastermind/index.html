@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Mastermind, le jeu !">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mastermind</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="icon" href="images/530951.png">
+</head>
+<body>
+
+  <div class="navbar navbar-static-top bg-primary navbar-custom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><span>Mastermind, le jeu !</span></a>
+      </div>
+      <div class="collapse navbar-right navbar-collapse" id="navbar-ex-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Difficultés :</a></li>
+          <li><a href="#" onclick="afficherPlanche(4)">4 couleurs</a></li>
+          <li><a href="#" onclick="afficherPlanche(5)">5 couleurs</a></li>
+          <li><a href="#" onclick="afficherPlanche(6)">6 couleurs</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 img-responsive palette" id="palette">
+          <h1 class="bg-primary text-center">Mastermind, le jeu !!!</h1>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 img-responsive planche joueur" id="planche">
+          <p>Ceci est une version personnelle du fameux jeu Mastermind.<br><br>
+            Les règles du jeu sont connues mais il est important de tenir compte des conseils et précisions suivants :</p>
+          <ul>
+            <li>Pour démarrer le jeu, vous devrez choisir la difficulté que vous souhaitez à partir de la barre de navigation en haut de la page.</li>
+            <li>Pour vous permettre de saisir votre combinaison, glissez et posez la couleur souhaitée à la position souhaitée. Vous pourrez aussi remplir un emplacement vide de la ligne en cours par le biais d'un double-clic sur une couleur existante.<br>
+              Une fois la ligne saisie complétée, vous aurez la possibilité de la valider et de vérifier le résultat en tenant compte que :</li>
+              <ul>
+                <li>Les billes noires signalent les couleurs trouvées qui sont bien placées.</li>
+                <li>Les billes blanches signalent les couleurs trouvées qui ne sont pas bien placées.</li>
+              </ul>
+              <li>La validation n'est possible uniquement si une ligne est complète.</li>
+              <li>La combinaison à trouver peut contenir une même couleur plusieurs fois.</li>
+              <li>Le jeu se termine quand la combinaison est trouvée.</li>
+              <p class="letsgo">Maintenant, c'est à vous de jouer !</p>
+            </ul>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="message"></div>
+
+  <footer class="section section-primary bg-primary navbar-fixed-bottom text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>V2.0 - &copy;Décembre 2016 - FredC - Développé en HTML, CSS, Bootstrap, Javascript et jQuery. Les images et la routine Drag And Drop ont été récupérées sur le Net puis adaptées.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
